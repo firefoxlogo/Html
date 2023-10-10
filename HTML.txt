@@ -1,0 +1,341 @@
+14-18 Web Technology Assignment
+
+ 14.Create an HTML5 program for the following input type 
+a. Date time
+ b. email input type 
+c. search input type
+
+Solution-
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML5 Input Types Example</title>
+</head>
+<body>
+    <h1>HTML5 Input Types Example</h1>
+    
+    <!-- Date Time Input -->
+    <label for="datetime">Date and Time:</label>
+    <input type="datetime-local" id="datetime" name="datetime" value="2023-10-10T14:30">
+    <br><br>
+    
+    <!-- Email Input -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" value="example@email.com">
+    <br><br>
+    
+    <!-- Search Input -->
+    <label for="search">Search:</label>
+    <input type="search" id="search" name="search" value="Search term">
+    <br><br>
+
+    <input type="submit" value="Submit">
+</body>
+</html>
+
+HTML5 Input Types Example
+Date and Time: [2023-10-10T14:30]
+Email: [example@email.com]
+Search: [Search term]
+[Submit]
+
+
+ 15.Write an HTML 5 program for student registration for college admission. 
+Solution-
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration for College Admission</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        article {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        aside {
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+        form {
+            padding: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="date"],
+        input[type="email"],
+        select,
+        input[type="tel"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Student Registration for College Admission</h1>
+    </header>
+    <article>
+        <section>
+            <h2>Personal Information</h2>
+            <form action="process_registration.php" method="post">
+                <label for="full_name">Full Name:</label>
+                <input type="text" id="full_name" name="full_name" required>
+                
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+                
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </section>
+            
+            <section>
+                <h2>Contact Information</h2>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </section>
+            
+            <section>
+                <h2>Academic Information</h2>
+                <label for="high_school">High School Name:</label>
+                <input type="text" id="high_school" name="high_school" required>
+                
+                <label for="grad_year">Year of High School Graduation:</label>
+                <input type="number" id="grad_year" name="grad_year" required>
+                
+                <label for="program_choice">Program of Choice:</label>
+                <input type="text" id="program_choice" name="program_choice" required>
+            </section>
+            
+            <aside>
+                <h3>Important Note</h3>
+                <p>Please make sure to fill out all the required fields accurately for your college admission.</p>
+            </aside>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </article>
+    
+    <footer>
+        &copy; 2023 College Admission Registration
+    </footer>
+</body>
+</html>
+
+2…. One more example----------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        form {
+            background-color: #fff;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="date"],
+        input[type="email"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Student Registration</h1>
+    </header>
+    <form action="process_registration.php" method="post">
+        <label for="full_name">Full Name:</label>
+        <input type="text" id="full_name" name="full_name" required>
+        
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="program_choice">Program of Choice:</label>
+        <input type="text" id="program_choice" name="program_choice" required>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
+
+ 16.Write a css3 script for the above student registration form e.g. high lite compulsory fields in a different color
+Solution-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        form {
+            background-color: #fff;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="date"],
+        input[type="email"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        input[required], /* Highlight required fields */
+        select[required] {
+            border: 2px solid #ff6347; /* Red border for required fields */
+            background-color: #ffeeee; /* Light red background for required fields */
+        }
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Student Registration</h1>
+    </header>
+    <form action="process_registration.php" method="post">
+        <label for="full_name">Full Name:</label>
+        <input type="text" id="full_name" name="full_name" required>
+        
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="program_choice">Program of Choice:</label>
+        <input type="text" id="program_choice" name="program_choice" required>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
+
+
+
+ 17. Write a bootstrap program for the following “The .table class adds basic styling (light padding and only horizontal dividers) to a table” The table can have the first name, last name, and email id as columns. 
+Solution-
+
+18.Write a bootstrap application to display thumbnails of the images.
